@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Reserva tu cita</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/resercitas.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="navegador">
+    <a href="index.html">
+        <img src="img/Logo_para_Nova_Centro_de_Salud-removebg-preview.png" width="60">
+    </a>
+
+    <nav>
+        <ul>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="especialidades.html">Especialidades</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="medicos.html">Médicos</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+        </ul>
+    </nav>
+
+    <div class="acciones">
+        <a href="resercitas.html" class="Citas">Reserva tu cita</a>
+        <a href="login.html" class="portal">Portal Nova</a>
+    </div>
+</div>
+
+<!-- TITULO -->
+<div id="titulo-cita">
+    <h1>Reserva tu cita médica en Nova</h1>
+</div>
+
+<!-- FORMULARIO -->
+<div class="citas">
+<form action="confirmacioncita.html" method="get" class="formulario">
+
+  <h2>Formulario de cita</h2>
+
+  <div class="grupo">
+    <label>Fecha:</label>
+    <input type="date" name="Fecha" required>
+  </div>
+
+  <div class="grupo">
+    <label>Paciente:</label>
+    <input type="text" name="Cliente" placeholder="Nombre completo" required>
+  </div>
+
+  <div class="grupo">
+    <label>DNI:</label>
+    <input type="text" name="DNI" pattern="[0-9]{8}" placeholder="8 dígitos" required>
+  </div>
+
+  <div class="grupo">
+    <label>WhatsApp:</label>
+    <input type="tel" name="Whatsapp" placeholder="Ej: 987654321" required>
+  </div>
+
+  <div class="grupo">
+    <label>Sede:</label>
+    <select name="Sede" required>
+      <option>Lima Centro</option>
+      <option>Miraflores</option>
+      <option>Los Olivos</option>
+    </select>
+  </div>
+
+  <div class="grupo">
+    <label>Servicio Médico:</label>
+    <select name="Servicio" required>
+      <option>Cirugía de cabeza y cuello</option>
+      <option>Cirugía general</option>
+      <option>Cardiología</option>
+      <option>Pediatría</option>
+      <option>Dermatología</option>
+      <option>Traumatología</option>
+      <option>Neurología</option>
+      <option>Oftalmología</option>
+      <option>Otorrinolaringología</option>
+      <option>Endocrinología</option>
+      <option>Gastroenterología</option>
+      <option>Urología</option>
+      <option>Oncología</option>
+      <option>Psiquiatría</option>
+      <option>Neumología</option>
+      <option>Reumatología</option>
+      <option>Hematología</option>
+      <option>Infectología</option>
+      <option>Medicina física</option>
+    </select>
+  </div>
+
+  <button class="subir" type="submit">Reservar cita</button>
+
+</form>
+</div>
+
+<!-- VIDEO -->
+<div class="indicacion">
+    <h3>Indicaciones</h3>
+    <p>Sigue las instrucciones del video para reservar correctamente.</p>
+
+    <video autoplay muted loop controls>
+        <source src="video/Video Project.mp4" type="video/mp4">
+        Tu navegador no soporta video
+    </video>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-container">
+
+    <div class="footer-col">
+      <img src="img/Logo para Nova Centro de Salud.png" class="logo-footer">
+      <p>Atención médica de calidad para ti y tu familia.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <ul>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="especialidades.html">Especialidades</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="medicos.html">Médicos</a></li>
+        <li><a href="resercitas.html">Reservar cita</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contáctanos</h4>
+      <p><i class="fas fa-map-marker-alt"></i> Lima, Perú</p>
+      <p><i class="fas fa-phone"></i> +51 999 999 999</p>
+      <p><i class="fas fa-envelope"></i> contacto@clinica.com</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Síguenos</h4>
+      <div class="socials">
+        <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+        <a href="https://x.com/?lang=es"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.whatsapp.com/?lang=es"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Clínica Nova</p>
+  </div>
+</footer>
+
+</body>
+</html>

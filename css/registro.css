@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* FONDO GENERAL */
+body{
+    background: #dff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CONTENEDOR GENERAL */
+.izquierda{
+    display: flex;
+    width: 1000px;
+    max-width: 95%;
+    height: 90vh;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+.imgagen{
+    width: 50%;
+    height: 100%;
+}
+
+.imgagen img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FORMULARIO */
+.formulario{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* CONTENIDO INTERNO */
+.contenedor{
+    width: 80%;
+    max-height: 100%;
+    overflow-y: auto;
+}
+
+/* TITULO */
+.formulario h1{
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 20px;
+}
+
+/* LABELS */
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #023e8a;
+    font-size: 14px;
+}
+
+/* INPUTS */
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #90e0ef;
+    border-radius: 8px;
+    outline: none;
+}
+
+/* FOCUS */
+input:focus, select:focus{
+    border-color: #0077b6;
+    box-shadow: 0 0 5px #90e0ef;
+}
+
+/* BOTON */
+button{
+    width: 100%;
+    padding: 10px;
+    background: #00b4d8;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover{
+    background: #0077b6;
+}
+
+/* OPCION ARRIBA */
+.opcion{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 14px;
+}
+
+.opcion a{
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.opcion a:hover{
+    text-decoration: underline;
+}
+
+/* CHECKBOX */
+.termino{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.acciones .portal{
+  color: white;
+}

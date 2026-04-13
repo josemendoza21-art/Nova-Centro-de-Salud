@@ -1,0 +1,535 @@
+body{
+  margin: 0;
+  padding: 0;
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  background-color: #f4f9fb;
+}
+
+
+.navegador{
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0; 
+  box-sizing: border-box;
+  z-index: 1000;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  border-bottom: 1px solid #e5ecf3;
+}
+
+.navegador nav ul{
+  display: flex;
+  list-style:none;
+  gap: 15px;
+}
+
+.navegador a{
+  color: #0a4d68;
+  text-decoration: none;
+}
+
+.navegador nav ul a:hover{
+  color: #2e97c0;
+}
+
+
+.acciones {
+  display: flex;
+  align-items: center;
+}
+
+.acciones a{
+  text-decoration: none;
+  margin: 10px;
+  padding: 8px 25px;
+  border-radius: 20px;
+  border: 2px solid #0a4d68;
+  transition: 0.3s;
+}
+
+.portal{
+  background-color: #0a4d68;
+  color: white;
+}
+
+.portal:hover{
+  background-color: #2e97c0;
+}
+
+.Citas{
+  color: #0a4d68;
+}
+
+.Citas:hover{
+  color: #2e97c0;
+  border: 2px solid #2e97c0;
+}
+
+/* titulo general */
+.header{
+  background-color: lightblue;
+  padding: 20px 150px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.titulo h1{
+  font-size: 50px; 
+  color: #0a4d68;
+}
+
+.titulo span{
+  color: #2e97c0;
+}
+
+.titulo p{
+  font-size: 20px;
+  color: #0a4d68;
+}
+
+.contenedor{
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 15px;
+}
+
+.contenedor form{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.lado-izquierdo{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 100px;
+}
+
+.solicitud{
+  margin-top: 20px;
+}
+
+.info label{
+  font-size: 12px;
+}
+
+.info{
+  padding: 10px;
+}
+
+.info select{
+  padding: 6px 20px;
+  border-radius: 8px;
+}
+
+.info option{
+  padding: 6px 30px;
+}
+
+form button {
+  margin: 20px 20px;
+  padding: 15px 40px ;
+  border-radius: 50px;
+  background-color: #0a4d68;
+  color: white;
+}
+
+form button:hover{
+  background-color: #2e97c0;
+  border: cornflowerblue 2px solid;
+  transition: 0.5s;
+}
+/* especialidades */
+.especia-info{
+  font-size: 35px;
+  color: #0a4d68;
+}
+.especialidades {
+  text-align: center;
+}
+
+.titulo-espe {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+  color: #0a4d68;
+}
+
+.titulo-espe p {
+  font-size: 20px;
+  color: #2e97c0;
+}
+
+/*  nombre de clase */
+.especialidad-informacion {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 60px;
+  justify-items: center;
+  padding: 20px;
+}
+
+.dass {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  text-align: center;
+  transition: 0.3s;
+  border: 1px solid #e5ecf3;
+}
+
+.dass:hover {
+  transform: translateY(-5px);
+}
+
+.dass i {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.especialidades div img {
+  display: block;
+  margin: 30px auto;
+  width: 200px;
+}
+/* boton de especialidades */
+.mira{
+  text-align: center;
+  margin: 40px 0;
+}
+
+.mira a{
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #0a4d68;
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+
+.mira a:hover{
+  background-color: #2e97c0;
+}
+
+
+/* servicios medicos  */
+
+
+
+.servicios{
+  background-color: lightblue;
+  text-align: center;
+  padding: 40px;
+}
+.titulo-servicio h2{
+  font-size: 35px;
+  color: #0a4d68;
+}
+.titulo-servicio span{
+  font-size: 20px;
+  color: #0b6f91;
+}
+.cards{
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px;
+}
+
+.card-servicio {
+  width: 300px;
+  height: 520px;
+  background: #1f6f8b;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card-servicio:hover {
+  transform: scale(1.1);
+}
+
+.card-servicio img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.contenido {
+  padding: 15px;
+  text-align: left;
+}
+
+.contenido h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.contenido p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.contenido ul {
+  padding-left: 18px;
+}
+
+.contenido ul li {
+  font-size: 13px;
+  margin-bottom: 5px;
+  list-style: none;
+}
+/* boton */
+.mas{
+  margin-top: 20px;
+}
+
+.mas a{
+  text-decoration: none;
+  border: 2px solid #0a4d68;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color: #0a4d68;
+  transition: 0.3s;
+}
+
+.mas a:hover{
+  background-color: #0a4d68;
+  color: white;
+}
+
+/* atendido */
+.atendido{
+  padding: 50px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+}
+
+.titulo-atendido h2{
+  font-size: 40px;
+  color: #0a4d68 ;
+}
+
+.titulo-atendido h2 span{
+  color: #2e97c0;
+}
+
+.titulo-atendido p{
+  font-size: 20px;
+  color: #2e97c0;
+}
+
+.contenido1{
+  display: flex;
+  justify-content: center;
+  margin: 50px;
+}
+
+.persona{
+  margin: 10px 20px;
+  padding: 20px;
+  border: #0a4d68 solid 3px;
+  border-radius: 20px;
+}
+
+.persona h3{
+  font-size: 28px;
+  color: #0a4d68;
+}
+
+.persona span{
+  color: #2e97c0;
+}
+/* sede */
+.sede{
+  background-color: lightblue;
+  padding: 50px 120px;
+  display: flex;
+}
+
+.titulo-sede{
+  padding: 20px;
+  margin: 20px 50px;
+}
+
+.titulo-sede h2{
+  color: #0a4d68;
+  font-size: 50px;
+}
+
+.titulo-sede span{
+  color: #2e97c0;
+}
+.titulo-sede{
+  font-size: 25px;
+  color: #0a4d68;
+}
+.cards-contacto {
+  display: flex;
+  gap: 50px;
+}
+
+.card-contacto {
+  background: #1f6f8b;
+  color: white;
+  border-radius: 20px;
+  width: 260px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card-contacto:hover {
+  transform: translateY(-5px);
+}
+
+.card-contacto img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-contacto h3 {
+  margin: 10px;
+}
+
+.card-contacto p {
+  margin: 5px 10px;
+  font-size: 14px;
+}
+
+.card-contacto h4 {
+  margin: 10px;
+}
+
+.card-contacto ul {
+  padding-left: 20px;
+  margin: 5px 10px;
+}
+
+.card-contacto ul li {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card-contacto a {
+  display: block;
+  margin: 15px;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.card-contacto a:hover {
+  background: white;
+  color: #1f6f8b;
+}
+
+
+/* pie de pagina */
+.footer {
+  background: #0a4d68;
+  color: white;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding-bottom: 30px;
+}
+
+.footer-col {
+  width: 220px;
+}
+
+.logo-footer {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.footer h4 {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer h4::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background: #00bcd4;
+  display: block;
+  margin-top: 5px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.footer a:hover {
+  color: #00bcd4;
+}
+
+.footer p i {
+  margin-right: 8px;
+  color: #00bcd4;
+}
+
+.socials a {
+  display: inline-block;
+  margin-right: 10px;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.socials a:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+/* PARTE DE ABAJO */
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.acciones .portal{
+  color: white;
+}
